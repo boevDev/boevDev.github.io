@@ -1,0 +1,143 @@
+footer {
+  margin: 0 auto;
+  flex: 0 0 auto;
+
+  width: 100%;
+}
+
+.footer__conteiner {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+
+  padding: 0 14px 0 14px;
+
+  width: calc(100% - 28px);
+  max-width: 1140px;
+}
+
+.footer__contacts-block {
+  text-align: end;
+}
+
+.footer__title {
+  color: var(--dark-gray-color);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.footer__content {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__content_row {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+
+.footer__item {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__tel {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer__item_messengers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-self: flex-end;
+
+  gap: 10px;
+}
+
+.privacy-policy_conteiner {
+  margin: 33px auto 20px auto;
+
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 0 14px 0 14px;
+
+  width: calc(100% - 28px);
+  max-width: 1140px;
+}
+
+.privacy-policy__link {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__item {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  footer {
+    background-color: #0E1014;
+    padding: 41px 0 41px 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer__content_row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__conteiner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__contacts-block {
+    align-items: start;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .footer__item_messengers {
+    align-self: flex-start;
+  }
+
+  .privacy-policy_conteiner {
+    text-align: left;
+  }
+
+  .footer__content_row {
+    width: 100%;
+    flex-direction: row;
+    gap: 50px;
+  }
+}

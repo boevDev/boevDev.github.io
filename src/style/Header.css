@@ -1,0 +1,144 @@
+header {
+  margin-top: 46px;
+  width: 100%;
+}
+
+.header__container {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+
+  padding: 0 14px 0 14px;
+
+  width: calc(100%-28px);
+  max-width: 1140px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+img.header__logo__img {
+  max-width: 140px;
+}
+
+.header__logo__info {
+  max-width: 140px;
+
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header__nav {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.header__nav__item {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+
+  gap: 47px;
+}
+
+.header__contacts__phone {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header__contacts__messengers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 30px;
+}
+
+@media screen and (max-width: 1060px) {
+  .header__contacts {
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+
+    align-items: end;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  header {
+    position: absolute;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    align-items: center;
+
+    background-color: #0E1014;
+  }
+
+  .header__nav {
+    margin: 0 auto;
+    /* width: calc(100% - 28px); */
+    padding: 20px 0px 20px 0px; 
+    gap: 16px;
+    align-items: center;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .header__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__item__hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__nav__item {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

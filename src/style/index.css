@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap');
+
+@import './App.css';
+@import './Header.css';
+@import './MainPage.css';
+@import './Footer.css';
+@import './Button.css';
+
+* {
+  --main-text-color: #E4E5EA;
+  --dark-gray-color: #656566;
+}
+
+#root {
+  height: 100vh;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url('../assets/bg-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0E1014;
+  color: var(--main-text-color);
+
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+@media screen and (max-width: 910px) {
+  body {
+    /* background-image: url('../assets/bg-image-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    background-image: none;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  body {
+    background-image: url('../assets/bg-image-mobile.png');
+  }
+} */
+

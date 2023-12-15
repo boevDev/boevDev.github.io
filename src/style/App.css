@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  margin: 0 auto;
+
+  /* width: calc(100%-28px); */
+  /* max-width: 1140px; */
+  
+
+  /* padding: 0 14px 0 14px; */
+}
