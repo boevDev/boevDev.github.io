@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://boevdev.github.io/",
+  "homepage": "https://boevdev.github.io/welbex/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
